@@ -32,5 +32,5 @@ function convertDate(value: string): string {
         return value;
     }
 
-    return format(date, 'MMM dd');
+    return `        ${format(date, 'MMM dd')}`;
 }

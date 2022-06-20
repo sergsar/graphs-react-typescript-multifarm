@@ -24,7 +24,7 @@ const chartStyle: CSSProperties = {
     backgroundColor: backgroundColor,
 };
 
-const getOptions = (chart?: ChartItem) => ({
+const getOptions = (chart?: ChartItem, canvas?: HTMLCanvasElement) => ({
     spanGaps: 1000 * 60 * 60 * 24 * 2,
     plugins: {
         title: {
@@ -45,13 +45,13 @@ const getOptions = (chart?: ChartItem) => ({
     scales: {
         xAxes: {
             grid: {
-                color: 'rgba(120, 126, 171, 0.1)'
+                color: 'rgba(120, 126, 171, 0.1)',
             },
             ticks: {
                 autoSkip: true,
                 maxRotation: 0,
                 minRotation: 0,
-                maxTicksLimit: 10,
+                maxTicksLimit: canvas?.width ? canvas.width / 150 : 10,
                 color: 'white',
             }
         },
@@ -80,7 +80,6 @@ const Chart: FC<ChartProps> = ({
             return;
         }
         const ctx = (chartRef.current as any)?.ctx;
-        console.log('context: ', ctx);
 
         const data = generateChartData();
 
@@ -91,7 +90,7 @@ const Chart: FC<ChartProps> = ({
         data.datasets.forEach((dataset: any) => dataset.backgroundColor = gradient);
 
         // optionsInitial.scales.yAxes.ticks.callback = (value) => parseValueByType(value, chart.type);
-        setOptions(getOptions(chart));
+        setOptions(getOptions(chart, ctx.canvas));
         setData(data);
 
     }, [chartRef]);
