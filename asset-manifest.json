@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/graphs-react-typescript-multifarm/static/css/main.073c9b0a.css",
+    "main.js": "/graphs-react-typescript-multifarm/static/js/main.32d83cc8.js",
+    "static/js/787.1692181c.chunk.js": "/graphs-react-typescript-multifarm/static/js/787.1692181c.chunk.js",
+    "index.html": "/graphs-react-typescript-multifarm/index.html",
+    "main.073c9b0a.css.map": "/graphs-react-typescript-multifarm/static/css/main.073c9b0a.css.map",
+    "main.32d83cc8.js.map": "/graphs-react-typescript-multifarm/static/js/main.32d83cc8.js.map",
+    "787.1692181c.chunk.js.map": "/graphs-react-typescript-multifarm/static/js/787.1692181c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.32d83cc8.js"
+  ]
+}
