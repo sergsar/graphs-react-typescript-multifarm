@@ -11,13 +11,18 @@ interface ChartProps {
 const backgroundColor = 'rgb(45, 51, 85)';
 
 const ChartWrapper = styled.div`
-  max-width: 700px;
   margin: 25px;
-
+  display: inline-block;
+  width: 100%;
   border-radius: 10px;
   overflow: hidden;
   background-color: ${backgroundColor};
 `;
+
+const chartStyle: CSSProperties = {
+    margin: "25px",
+    backgroundColor: backgroundColor,
+};
 
 const getOptions = (chart?: ChartItem) => ({
     spanGaps: 1000 * 60 * 60 * 24 * 2,
@@ -31,7 +36,7 @@ const getOptions = (chart?: ChartItem) => ({
             display: false,
         },
     },
-    maintainAspectRatio: false,
+    // maintainAspectRatio: false,
     elements: {
         point: {
             radius: 0
@@ -61,13 +66,6 @@ const getOptions = (chart?: ChartItem) => ({
         },
     },
 });
-
-const chartStyle: CSSProperties = {
-    width: "100vw",
-    height: "50vh",
-    margin: "25px",
-    backgroundColor: backgroundColor,
-};
 
 const Chart: FC<ChartProps> = ({
     chart
