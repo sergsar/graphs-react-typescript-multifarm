@@ -100,7 +100,7 @@ const Chart: FC<ChartProps> = ({
         const data: number[] = [];
         const labels: string[] = [];
 
-        chart.values.forEach((value) => {
+        chart.values?.forEach((value) => {
             data.push(value.value);
             labels.push(value.date);
         });

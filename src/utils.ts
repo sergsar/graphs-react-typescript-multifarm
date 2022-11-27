@@ -3,14 +3,14 @@ import {format, isValid} from 'date-fns'
 import millify from "millify";
 
 export function getTvl(data: ResponseDataItem): ChartValue[] {
-    return data.selected_farm[0].tvlStakedHistory.map((item: TvlStakedHistoryItem) => ({
+    return data.gaugeData.tvlStakedHistorical?.map((item: TvlStakedHistoryItem) => ({
         date: convertDate(item.date),
         value: item.value,
     }));
 }
 
 export function getApr(data: ResponseDataItem): ChartValue[] {
-    return getTvl(data).map((item: ChartValue, index: number) => ({
+    return getTvl(data)?.map((item: ChartValue, index: number) => ({
         ...item,
         value: 5 * index,
     }));

@@ -4,11 +4,11 @@ export type ResponseData = { data: ResponseDataItem[] };
 
 export type ResponseDataItem = {
     assetId: string;
-    selected_farm: SelectedFarm[];
+    gaugeData: GaugeData;
 };
 
-export type SelectedFarm = {
-    tvlStakedHistory: TvlStakedHistoryItem[];
+export type GaugeData = {
+    tvlStakedHistorical: TvlStakedHistoryItem[];
 }
 
 export type TvlStakedHistoryItem = {

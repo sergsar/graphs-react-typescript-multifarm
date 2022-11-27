@@ -28,7 +28,7 @@ const App: FC = () => {
         setData(data);
         console.log('data: ', data);
 
-        const filteredItems = data.data.filter((item: ResponseDataItem, index: number) => index === Math.floor(data.data.length / 2));
+        const filteredItems = data.data.filter((item: ResponseDataItem) => item.assetId === 'ETH_Balancer_wstETH-WETH');
         console.log('filteredItems: ', filteredItems);
         const charts: ChartsItem[] = filteredItems.map((item: ResponseDataItem) => {
             return {
