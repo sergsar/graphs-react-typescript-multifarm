@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/graphs-react-typescript-multifarm/static/css/main.073c9b0a.css",
-    "main.js": "/graphs-react-typescript-multifarm/static/js/main.3ab21ee9.js",
+    "main.js": "/graphs-react-typescript-multifarm/static/js/main.c998c061.js",
     "static/js/787.1692181c.chunk.js": "/graphs-react-typescript-multifarm/static/js/787.1692181c.chunk.js",
     "index.html": "/graphs-react-typescript-multifarm/index.html",
     "main.073c9b0a.css.map": "/graphs-react-typescript-multifarm/static/css/main.073c9b0a.css.map",
-    "main.3ab21ee9.js.map": "/graphs-react-typescript-multifarm/static/js/main.3ab21ee9.js.map",
+    "main.c998c061.js.map": "/graphs-react-typescript-multifarm/static/js/main.c998c061.js.map",
     "787.1692181c.chunk.js.map": "/graphs-react-typescript-multifarm/static/js/787.1692181c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.3ab21ee9.js"
+    "static/js/main.c998c061.js"
   ]
 }
